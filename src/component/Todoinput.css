@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.input {
+    display: flex;
+    width: 380px;
+}
+
+.input input {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    border: none;
+    text-align: start;
+    font-weight: bolder;
+    box-shadow: 2px 2px 20px 2px black;
+    filter: blur(20);
+    color: black;
+    padding-left: 10px;
+}
+
+.input button {
+    width: 50px;
+    height: 42px;
+    color: #fff;
+    background-color: black;
+    font-size: 32px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: none;
+    box-shadow: 1px 1px green yellow;
+    filter: blur(20);
+}
+.input button:hover{
+    transform: scale(1.15);
+    transition: 0.8s ease-in;
+}
+
+
+@media (max-width: 768px) {
+    .input {
+        width: 300px;
+    }
+
+    .input input {
+        width: 230px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .input button {
+        width: 45px;
+        height: 38px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .input {
+        width: 250px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input input {
+        width: 230px;
+        height: 35px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .input button {
+        width: 50px;
+        height: 42px;
+        font-size: 28px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .input {
+        width: 200px;
+    }
+
+    .input input {
+        width: 180px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .input button {
+        width: 45px;
+        height: 38px;
+        font-size: 26px;
+    }
+}
